@@ -1,8 +1,11 @@
+using SkyWheels.Contact.API.Extensions.ServiceExtensions;
+using SkyWheels.Contact.API.Extensions.MiddlewareExtensions;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 // ServiceExtensions
-// builder.AddCustomServices();
+builder.AddCustomServices();
 
 // Add services to the container.
 builder.Services.AddControllers();
@@ -22,7 +25,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 // Middleware Extensions
-//app.UseMiddleware();
+app.UseMiddleware();
 
 app.MapControllers();
 
