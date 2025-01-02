@@ -1,0 +1,6 @@
+@SkyWheels.Payment.API_HostAddress = http://localhost:5211
+
+GET {{SkyWheels.Payment.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

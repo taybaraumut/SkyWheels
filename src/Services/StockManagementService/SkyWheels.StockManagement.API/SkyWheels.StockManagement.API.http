@@ -1,0 +1,6 @@
+@SkyWheels.StockManagement.API_HostAddress = http://localhost:5048
+
+GET {{SkyWheels.StockManagement.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

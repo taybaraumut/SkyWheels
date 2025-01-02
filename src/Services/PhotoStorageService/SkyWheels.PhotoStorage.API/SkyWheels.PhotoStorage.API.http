@@ -1,0 +1,6 @@
+@SkyWheels.PhotoStorage.API_HostAddress = http://localhost:5285
+
+GET {{SkyWheels.PhotoStorage.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
