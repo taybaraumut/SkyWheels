@@ -1,0 +1,19 @@
+﻿using SkyWheels.Contact.API.Core.Utilities;
+
+namespace SkyWheels.Contact.API.Core.Results
+{
+    public abstract class DataResult<T>:Result,IDataResult<T>
+    {
+        public DataResult(T data, bool success, string message) : base(success, message)
+        {
+            Data = data;
+        }
+
+        public DataResult(T data, bool success) : base(success)
+        {
+            Data = data;
+        }
+
+        public T Data { get; }
+    }
+}
